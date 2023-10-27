@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
-function Color() {
+import { CartWidget } from './CartWidget';
+export const NavBar = () =>  {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -13,6 +13,7 @@ function Color() {
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
+          <CartWidget />
         </Container>
       </Navbar>
       <br />
@@ -40,5 +41,4 @@ function Color() {
       </Navbar>
     </>
   );
-}
-export default navbar1
+};
