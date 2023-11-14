@@ -1,7 +1,8 @@
 import { NavBar } from "./components/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer";
 import "./App.css";
-
+import  { ProductCard } from "./components/ProductCard"
+import {Link} from 'react-router-dom'
 
 function App() {
 
@@ -10,9 +11,13 @@ function App() {
       <NavBar/>
       <ItemListContainer greeting={<h1>Welcome</h1>}/>
     </>
+
   )
 }
-
-export default App
+function Products(){
+  return(
+  <ProductCard> </ProductCard>
+  )
+}
 
 
